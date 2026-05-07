@@ -143,6 +143,22 @@ html[data-vpn] .tg-origin-banner{background:var(--surface2) !important;border:1p
 html[data-vpn] .subscription-status-card,html[data-vpn] .subscription-limits-card{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
 html[data-vpn] .payment-share-block{background:var(--surface2) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
 
+/* ===== ОПЛАТА — тарифные планы ===== */
+html[data-vpn] .payment-plans-grid{background:transparent !important;}
+html[data-vpn] .create-step{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;color:var(--text) !important;}
+html[data-vpn] .create-step-title{color:var(--text) !important;}
+html[data-vpn] .create-step-hint{color:var(--text2) !important;}
+html[data-vpn] .payment-plan-card{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;color:var(--text) !important;}
+html[data-vpn] .payment-plan-card:hover{border-color:var(--accent) !important;box-shadow:0 0 0 2px var(--glow) !important;}
+html[data-vpn] .payment-plan-card.selected{border-color:var(--accent) !important;box-shadow:0 0 0 2px var(--glow) !important;background:rgba(108,99,255,0.07) !important;}
+html[data-vpn] .payment-plan-name{color:var(--text2) !important;}
+html[data-vpn] .payment-plan-price{color:var(--text) !important;font-weight:700 !important;}
+html[data-vpn] .payment-methods-list{background:transparent !important;}
+html[data-vpn] .payment-submit{background:transparent !important;}
+html[data-vpn] .payment-error{color:var(--danger) !important;}
+html[data-vpn] .payment-success-msg{color:var(--success) !important;}
+html[data-vpn] .payment-checking-loader,.payment-checking-text{color:var(--text2) !important;}
+
 /* ===== ГЛОБАЛЬНОЕ ПОКРЫТИЕ белых div без класса ===== */
 html[data-vpn] div{color:inherit !important;}
 html[data-vpn] div:not([class]){background:transparent !important;}
