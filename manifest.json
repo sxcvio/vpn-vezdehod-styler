@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
   "name": "VPN Vezdehod Styler",
-  "short_name": "VPN Styler",
-  "description": "7 красивых тем для acc.kompot.sbs — тёмные, светлые, киберпанк, матрица и другие. Переключай прямо из шапки сайта.",
-  "version": "1.0.0",
+  "description": "7 тем для acc.kompot.sbs",
+  "version": "2.0.0",
   "permissions": ["storage"],
   "host_permissions": ["https://acc.kompot.sbs/*"],
   "content_scripts": [
@@ -15,12 +14,6 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "VPN Vezdehod Styler"
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "default_title": "VPN Styler"
   }
 }
