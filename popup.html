@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>VPN Styler</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 300px;
+  background: #0f0f13;
+  color: #e8e8f0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+}
+.header {
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-bottom: 1px solid #2e2e3e;
+  display: flex; align-items: center; gap: 10px;
+}
+.icon { font-size: 22px; }
+.title { font-weight: 700; font-size: 14px; }
+.sub { font-size: 10px; color: #6666aa; margin-top: 1px; }
+
+.status {
+  padding: 7px 16px;
+  background: #141418;
+  border-bottom: 1px solid #2e2e3e;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: #6666aa;
+}
+.status-val { color: #9494aa; font-weight: 500; }
+
+.list { padding: 8px; display: flex; flex-direction: column; gap: 3px; }
+
+.theme-btn {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 10px;
+  background: #1a1a22;
+  border: 1px solid #2e2e3e;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left; width: 100%;
+  color: #e8e8f0;
+  transition: all 0.12s ease;
+}
+.theme-btn:hover { background: #22222e; border-color: #6c63ff; }
+.theme-btn.active { border-color: #6c63ff; background: rgba(108,99,255,0.1); }
+
+.preview {
+  width: 34px; height: 24px;
+  border-radius: 5px; flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.p1 { background: linear-gradient(135deg, #0d0d0f 50%, #6c63ff 50%); }
+.p2 { background: linear-gradient(135deg, #060610 50%, #00f5ff 50%); }
+.p3 { background: linear-gradient(135deg, #0a110d 50%, #4caf6e 50%); }
+.p4 { background: linear-gradient(135deg, #f4f5f7 50%, #3b5bdb 50%); }
+.p5 { background: linear-gradient(135deg, #110805 50%, #ff6b35 50%); }
+.p6 { background: linear-gradient(135deg, #dce8fc 50%, #1971c2 50%); }
+.p7 { background: linear-gradient(135deg, #000300 50%, #00ff44 50%); }
+
+.tname { font-size: 12px; font-weight: 600; line-height: 1.3; }
+.tdesc { font-size: 10px; color: #6666aa; }
+.check {
+  margin-left: auto; width: 15px; height: 15px;
+  border-radius: 50%; border: 1.5px solid #2e2e3e;
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 8px; color: transparent; transition: all 0.12s;
+}
+.theme-btn.active .check { background: #6c63ff; border-color: #6c63ff; color: #fff; }
+
+.reset {
+  margin: 0 8px 8px;
+  padding: 8px;
+  background: transparent;
+  border: 1px dashed #2e2e3e;
+  border-radius: 7px;
+  color: #6666aa; font-size: 11px;
+  cursor: pointer; width: calc(100% - 16px);
+  font-family: inherit; transition: all 0.12s;
+}
+.reset:hover { border-color: #f87171; color: #f87171; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="icon">🎨</div>
+  <div>
+    <div class="title">VPN Vezdehod Styler</div>
+    <div class="sub">acc.kompot.sbs</div>
+  </div>
+</div>
+
+<div class="status">
+  <span>Тема:</span>
+  <span class="status-val" id="lbl">Оригинал</span>
+</div>
+
+<div class="list">
+  <button class="theme-btn" data-t="dark-midnight">
+    <div class="preview p1"></div>
+    <div><div class="tname">🌑 Dark Midnight</div><div class="tdesc">Тёмная · Фиолетовый акцент</div></div>
+    <div class="check">✓</div>
+  </button>
+  <button class="theme-btn" data-t="cyberpunk">
+    <div class="preview p2"></div>
+    <div><div class="tname">⚡ Cyberpunk Neon</div><div class="tdesc">Неон · Sci-fi эффекты</div></div>
+    <div class="check">✓</div>
+  </button>
+  <button class="theme-btn" data-t="forest">
+    <div class="preview p3"></div>
+    <div><div class="tname">🌲 Forest Green</div><div class="tdesc">Тёмная · Зелёные тона</div></div>
+    <div class="check">✓</div>
+  </button>
+  <button class="theme-btn" data-t="light-minimal">
+    <div class="preview p4"></div>
+    <div><div class="tname">☀️ Light Minimal</div><div class="tdesc">Светлая · Чистый минимализм</div></div>
+    <div class="check">✓</div>
+  </button>
+  <button class="theme-btn" data-t="sunset">
+    <div class="preview p5"></div>
+    <div><div class="tname">🌅 Sunset Orange</div><div class="tdesc">Тёмная · Оранжевые тона</div></div>
+    <div class="check">✓</div>
+  </button>
+  <button class="theme-btn" data-t="arctic">
+    <div class="preview p6"></div>
+    <div><div class="tname">❄️ Arctic Ice</div><div class="tdesc">Светлая · Холодный синий</div></div>
+    <div class="check">✓</div>
+  </button>
+  <button class="theme-btn" data-t="matrix">
+    <div class="preview p7"></div>
+    <div><div class="tname">💻 Matrix Terminal</div><div class="tdesc">Хакерский · Зелёный неон</div></div>
+    <div class="check">✓</div>
+  </button>
+</div>
+
+<button class="reset" id="reset">✕ Вернуть оригинальный дизайн</button>
+
+<script src="popup.js"></script>
+</body>
+</html>
