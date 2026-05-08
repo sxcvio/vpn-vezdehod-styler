@@ -102,6 +102,92 @@ html[data-vpn="sunset"] .section-title{background:linear-gradient(90deg,#ff6b35,
 /* ARCTIC */
 html[data-vpn="arctic"] .connection-card,html[data-vpn="arctic"] .login-card,html[data-vpn="arctic"] .content-card{backdrop-filter:blur(12px) !important;background:rgba(255,255,255,0.88) !important;}
 
+/* ===== ЦИФРОВЫЕ ТОВАРЫ ===== */
+/* Поиск */
+html[data-vpn] .dg-search-wrap{background:transparent !important;}
+html[data-vpn] .dg-search{background:var(--bg3) !important;border:1px solid var(--border) !important;color:var(--text) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-search::placeholder{color:var(--text3) !important;}
+/* Сетка брендов */
+html[data-vpn] .dg-view{background:transparent !important;}
+html[data-vpn] .dg-section{background:transparent !important;}
+html[data-vpn] .dg-section-title{color:var(--text2) !important;}
+html[data-vpn] .dg-grid{background:transparent !important;}
+html[data-vpn] .dg-tile{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-tile:hover{border-color:var(--accent) !important;box-shadow:0 4px 16px var(--glow) !important;}
+html[data-vpn] .dg-tile-brand{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-tile-brand:hover{border-color:var(--accent) !important;box-shadow:0 4px 16px var(--glow) !important;}
+html[data-vpn] .dg-tile-body{background:transparent !important;}
+html[data-vpn] .dg-tile-title{color:var(--text) !important;}
+html[data-vpn] .dg-tile-meta{color:var(--text2) !important;}
+html[data-vpn] .dg-tile-chevron{color:var(--text3) !important;}
+html[data-vpn] .dg-tile-strip{border-radius:var(--radius) var(--radius) 0 0 !important;}
+html[data-vpn] .dg-nothing-found{color:var(--text2) !important;}
+/* Кнопка мои заказы */
+html[data-vpn] .dg-orders-btn{background:var(--accent) !important;border-color:var(--accent) !important;color:var(--btn-text) !important;box-shadow:0 3px 12px var(--glow) !important;}
+html[data-vpn] .dg-orders-btn-count{background:rgba(255,255,255,0.25) !important;color:var(--btn-text) !important;border-radius:999px !important;}
+/* Список товаров внутри бренда */
+html[data-vpn] .dg-view-heading{color:var(--text) !important;}
+html[data-vpn] .dg-denom-list{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-denom-row{border-bottom:1px solid var(--border) !important;background:transparent !important;}
+html[data-vpn] .dg-denom-row:last-child{border-bottom:none !important;}
+html[data-vpn] .dg-denom-row:hover{background:var(--surface2) !important;}
+html[data-vpn] .dg-denom-info{background:transparent !important;}
+html[data-vpn] .dg-denom-name{color:var(--text) !important;}
+html[data-vpn] .dg-denom-price{color:var(--text2) !important;font-weight:600 !important;}
+html[data-vpn] .dg-buy-btn{background:var(--accent) !important;border-color:var(--accent) !important;color:var(--btn-text) !important;box-shadow:0 3px 12px var(--glow) !important;}
+html[data-vpn] .dg-buy-btn:hover{opacity:0.9 !important;transform:translateY(-1px) !important;}
+/* Оформление заказа */
+html[data-vpn] .dg-checkout-summary{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-checkout-summary-info{background:transparent !important;}
+html[data-vpn] .dg-checkout-summary-title{color:var(--text) !important;}
+html[data-vpn] .dg-checkout-summary-price{color:var(--accent) !important;font-weight:700 !important;}
+html[data-vpn] .dg-checkout-form{background:transparent !important;}
+html[data-vpn] .dg-checkout-section{background:transparent !important;}
+html[data-vpn] .dg-checkout-label{color:var(--text) !important;font-weight:600 !important;}
+html[data-vpn] .dg-checkout-hint{color:var(--text2) !important;}
+html[data-vpn] .dg-checkout-radio-group{background:transparent !important;}
+html[data-vpn] .dg-checkout-radio-row{color:var(--text) !important;}
+html[data-vpn] .dg-checkout-radio-label{color:var(--text) !important;}
+html[data-vpn] .dg-checkout-radio-value{color:var(--text2) !important;}
+html[data-vpn] .dg-checkout-radio-sub{color:var(--text3) !important;}
+html[data-vpn] .dg-checkout-channels{background:transparent !important;}
+html[data-vpn] .dg-checkout-channel{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;color:var(--text) !important;}
+html[data-vpn] .dg-checkout-channel.is-disabled{background:var(--bg3) !important;opacity:0.5 !important;}
+html[data-vpn] .dg-checkout-channel:not(.is-disabled):hover{border-color:var(--accent) !important;}
+html[data-vpn] .dg-checkout-channel.is-active{border-color:var(--accent) !important;background:rgba(108,99,255,0.07) !important;}
+html[data-vpn] .dg-checkout-channel-body{background:transparent !important;}
+html[data-vpn] .dg-checkout-channel-title{color:var(--text) !important;}
+html[data-vpn] .dg-checkout-error{color:var(--danger) !important;}
+/* Результат / успех */
+html[data-vpn] .dg-checkout-result{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-checkout-result-badge{background:rgba(74,222,128,0.1) !important;border:1px solid rgba(74,222,128,0.3) !important;border-radius:999px !important;color:var(--success) !important;padding:6px 14px !important;}
+html[data-vpn] .dg-checkout-result-badge-icon{color:var(--success) !important;}
+html[data-vpn] .dg-checkout-result-hint{color:var(--text2) !important;}
+html[data-vpn] .dg-checkout-pay-link{color:var(--accent) !important;}
+html[data-vpn] .dg-checkout-goto-orders{background:var(--surface2) !important;border:1px solid var(--border) !important;color:var(--text) !important;border-radius:var(--radius) !important;}
+/* Модалка */
+html[data-vpn] .dg-modal-overlay{background:rgba(0,0,0,0.7) !important;backdrop-filter:blur(4px) !important;}
+html[data-vpn] .dg-modal-card{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;box-shadow:0 20px 60px rgba(0,0,0,0.5) !important;color:var(--text) !important;}
+html[data-vpn] .dg-modal-title{color:var(--text) !important;font-weight:600 !important;}
+html[data-vpn] .dg-modal-body{color:var(--text2) !important;background:transparent !important;}
+html[data-vpn] .dg-modal-actions{background:transparent !important;border-top:1px solid var(--border) !important;}
+/* Заказы */
+html[data-vpn] .dg-orders-list{background:transparent !important;}
+html[data-vpn] .dg-order-card{background:var(--surface) !important;border:1px solid var(--border) !important;border-radius:var(--radius) !important;}
+html[data-vpn] .dg-order-card.is-expanded{border-color:var(--accent) !important;}
+html[data-vpn] .dg-order-head{background:transparent !important;color:var(--text) !important;}
+html[data-vpn] .dg-order-head:hover{background:var(--surface2) !important;}
+html[data-vpn] .dg-order-status{border-radius:999px !important;font-size:11px !important;font-weight:600 !important;}
+html[data-vpn] .dg-order-status.is-awaiting{background:rgba(251,146,60,0.15) !important;color:#fb923c !important;border:1px solid rgba(251,146,60,0.3) !important;}
+html[data-vpn] .dg-order-status.is-paid{background:rgba(74,222,128,0.12) !important;color:#4ade80 !important;border:1px solid rgba(74,222,128,0.3) !important;}
+html[data-vpn] .dg-order-status.is-cancelled,html[data-vpn] .dg-order-status.is-failed{background:rgba(248,113,113,0.12) !important;color:#f87171 !important;border:1px solid rgba(248,113,113,0.3) !important;}
+html[data-vpn] .dg-order-title{color:var(--text) !important;}
+html[data-vpn] .dg-order-date{color:var(--text3) !important;}
+html[data-vpn] .dg-order-price{color:var(--text) !important;font-weight:600 !important;}
+html[data-vpn] .dg-order-chevron{color:var(--text3) !important;}
+html[data-vpn] .dg-order-body{background:var(--surface2) !important;border-top:1px solid var(--border) !important;color:var(--text2) !important;}
+html[data-vpn] .dg-orders-loading,.dg-orders-error,.dg-orders-empty{color:var(--text2) !important;}
+
 /* ===== ПРОФИЛЬ — внутренние блоки ===== */
 html[data-vpn] .profile-block-header{background:transparent !important;border-bottom:1px solid var(--border) !important;padding-bottom:8px !important;}
 html[data-vpn] .profile-block-body{background:transparent !important;}
@@ -158,6 +244,19 @@ html[data-vpn] .payment-submit{background:transparent !important;}
 html[data-vpn] .payment-error{color:var(--danger) !important;}
 html[data-vpn] .payment-success-msg{color:var(--success) !important;}
 html[data-vpn] .payment-checking-loader,.payment-checking-text{color:var(--text2) !important;}
+html[data-vpn] .payment-method-item{background:transparent !important;border-bottom:1px solid var(--border) !important;color:var(--text) !important;}
+html[data-vpn] .payment-method-item:hover{background:var(--surface2) !important;}
+html[data-vpn] .payment-method-item.selected{background:rgba(108,99,255,0.08) !important;}
+html[data-vpn] .payment-method-label{color:var(--text) !important;}
+html[data-vpn] .payment-method-radio{accent-color:var(--accent) !important;}
+html[data-vpn] .payment-summary-row{border-bottom:1px solid var(--border) !important;color:var(--text) !important;background:transparent !important;}
+html[data-vpn] .payment-summary-label{color:var(--text2) !important;}
+html[data-vpn] .payment-summary-value{color:var(--text) !important;font-weight:600 !important;}
+html[data-vpn] .payment-share-title{color:var(--text) !important;}
+html[data-vpn] .payment-share-desc{color:var(--text2) !important;}
+html[data-vpn] .payment-share-copy-btn,html[data-vpn] .payment-share-share-btn{background:var(--surface2) !important;border:1px solid var(--border) !important;color:var(--text) !important;box-shadow:none !important;}
+html[data-vpn] .payment-share-copy-btn:hover,html[data-vpn] .payment-share-share-btn:hover{border-color:var(--accent) !important;color:var(--accent) !important;}
+html[data-vpn] .subscription-summary-chip{background:var(--surface2) !important;border:1px solid var(--border) !important;color:var(--text2) !important;border-radius:999px !important;}
 
 /* ===== ГЛОБАЛЬНОЕ ПОКРЫТИЕ белых div без класса ===== */
 html[data-vpn] div{color:inherit !important;}
@@ -465,3 +564,6 @@ html[data-vpn] .btn-copy:hover{border-color:var(--accent) !important;color:var(-
     if (msg.type === 'SET_THEME') { activeTheme = msg.theme || 'none'; updateMenuActive(); }
   });
 })();
+
+// ===== ЦИФРОВЫЕ ТОВАРЫ =====
+// Добавлено автоматически
